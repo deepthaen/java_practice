@@ -1,0 +1,118 @@
+Class -->
+    Its template from which we create object, which has group of objects.
+   why - we use class to store varaibles,objects, methods
+   where -- we use in any kind of project , under any package com.pack
+   what -- we write methods, constructors- we extend and create object, reflection
+
+package -->
+    package is a group of classes combined to gether and can be builded as library and import as single package
+
+Different Packages Available in Java?
+        java.lang
+
+Object -->
+    Which has data(value) and functionality.
+    Object is blue print of class and object is base for jave package
+    Object class is present in java.lang package
+   why - We us to create variables or methods
+   where - we use in class
+
+create proper Java class -- done
+create Abstract class -- done
+Create interface -- done
+Create ENUM  -- done
+Create Non static method  -- done
+static method  -- done
+return type method - done
+create constructor - done
+add name to String - done
+add number to integer - done
+add salary to double  - done
+add bank account number to long - done
+add true or false to boolean - done
+add petrol price to float - done
+add character to char - done
+List all data types -
+1.byte, 2.short, 3. char, 4.boolean, 5. int, 6. float, 7. double, 8. long, 9. Array, 10. String
+
+JDK - Java Devlopment kit - is a software tool, used to devlop java application and implemets jvm and jre
+JVM - Java Vitrual Machine - its set of software tool used to load, verifes and execute code gives run time env, present in software and hardware
+JRE - Java runtime enviorment  - is a sofware tool used  develop java application and implmennts jvm,
+
+Versions of Java -
+1, 1.1, 1.2, 1.3, 1.4, 1.5, 5, 6, 7, 8, 9, 10, 11
+Current Java Version- java version "15.0.1" 2020-10-20
+
+Java is platform depenedent or indepenednt? - its platform independent
+
+List different pacakages in Java? -
+    import java.util.*;
+    import java.awt.*;
+    import java.lang.*;
+
+What is String ?
+    String is a Immutable class
+    String S ="Deeptha";
+
+What are different Methods Avavailable in String?
+   - charAt()
+   - contains()
+   - equals()
+   - compareTo()
+   - toString()
+   - concat()
+   - split()
+
+what is mean by Concat and append?
+    - Concat is used to add anything at end of  string
+    - Append is used to add string or character sequence by using string buffer - (append is default in string bufer)
+
+What all can be added inside a class ?
+    - main method
+    - static method
+    - non method
+    - variables - Data types
+    - constructor
+    - fields
+    - static - before main method
+    - non static -- after main method
+    - Creating object
+    - import
+    - extends
+    - add package
+    - implements
+    - keywords
+what is System.out.println?
+    System - Class
+    out -- function
+    println -- method
+
+what is extends ?
+    - Accessing something from super class to sub class
+    - access both clas and abstract class, by using extends
+
+
+Can u create a constructor ?
+
+what is super ?
+    - Super refers to parent class, its keyword, used in constructor
+
+what is this?
+    - is keyword, refers to current class.
+
+
+Programs ::
+    Sum of 2 numbers ?
+    Print your name 10 times ?
+    Create arraylist and add your classmates names?
+    create String array and add Months (jan,feb,marc)?
+    create char araay and add alphabets [a,b,c,d,-- Z]?
+    just watch waht is askey value - what is askey value for a-z and A-Z?
+    what is binary codes ?
+    what is 0 and 1 ?
+    what is capacity of Integer,String,char,Double,float,long? how many bytes it will consume
+    add commit push
+
+
+
+
