@@ -82,6 +82,7 @@ What all can be added inside a class ?
     - add package
     - implements
     - keywords
+
 what is System.out.println?
     System - Class
     out -- function
@@ -94,6 +95,10 @@ what is extends ?
 
 Can u create a constructor ?
 
+- Constructor is blue print of class, which will have name as class name, doesnot have return type, which executed when ever object is created.
+- There different types of constructors: 1. default constructor, and parameterized constructor and non pamatermized constructor.
+- Will declare funstionality in c0onstructor of parent class and we will use in child by creating object of parent class.
+
 what is super ?
     - Super refers to parent class, its keyword, used in constructor
 
@@ -102,17 +107,112 @@ what is this?
 
 
 Programs ::
-    Sum of 2 numbers ?
-    Print your name 10 times ?
-    Create arraylist and add your classmates names?
-    create String array and add Months (jan,feb,marc)?
-    create char araay and add alphabets [a,b,c,d,-- Z]?
-    just watch waht is askey value - what is askey value for a-z and A-Z?
+    1. Sum of 2 numbers ? - done
+    2. Print your name 10 times ? - done
+    3. Create arraylist and add your classmates names? - done
+    4. create String array and add Months (jan,feb,marc)? - done
+    5. create char araay and add alphabets [a,b,c,d,-- Z]? - done
+
+     what is ASCII value ?
+      - Ascii value are 7 bit character value, represents the numerical value of a character
+    - what is askey value for a-z and A-Z?
+        - A = 65 and B=66..... Z=90
+        - a = 97 and b = 98 .....z=122
+
     what is binary codes ?
+        A binary code which converts our programing syntax to 0's and 1's
+
+     -Java Source are converted to java binary code in JVM, which in term convert to native code usinng jit,which will complies and execute code
+           Binary code will be in form of 0 and 1
     what is 0 and 1 ?
+     - Binary Code
+     0 - OFF
+     1 - ON
+
     what is capacity of Integer,String,char,Double,float,long? how many bytes it will consume
+    1 Byte = 8 bits
+
+    8 bits = 0 0 0 0 0 0 0 0
+
+
+    - Boolean = 1byte 0 0 0 0 0 0 0 0
+    - char   = 2byte 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+    - byte   = 8 bits
+    - short  = 2byte
+    - int   = 4byte 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 - 32 bits
+    - float  = 4byte
+    - long   = 8byte
+    - double   = 8byte
+    - String   = 2byte
+
+        int a =1; // 32 bits / 4 bytes
+        int = 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+        int a =2; // 32 bits / 4 bytes
+        int = 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0
+
     add commit push
 
+BInary code series from 1 to 10 ?
+   0- 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+   1- 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+   2- 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0
+    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
+    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1
+    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0
+    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1
 
+    0000
+    0001
+    0010
+    0011
+    0100
+    0101
+
+
+
+
+
+
+Note :: To Be discussed
+1. COnstructor
+
+What is interface ?
+    -- INterface is kind of a class
+        class - public class name{}
+        interface- public interface name{};
+    -- when we dono what to implement, then i create interface
+        and define functionality
+        Example ::
+            i wan to buy a audi car
+
+            FUnctionality ::
+                car(String model);
+                Engine(String type);
+            Implementation ::
+                public void car(String model){
+                    model = Audi A6;
+                }
+    -- we can achieve 100% abstraction in interface
+    -- we can write without body
+
+
+What is Abstraction ?
+   Hide implemtation and shoe functionality
+
+
+
+Questions ::
+    1. Create String buffer,string builder and use some methods and list all methods available
+    2. Calculate sum of array - done
+    3. write a code swap 2 numbers  - done
+    4. Write a code replace all and print only alphabets (input :: sdfghj1234567@#$%^asdfg) - done
+
+    input :: sdfghj1234567@#$%^asdfg
+    output :: sdfghjasdfg
+
+    5. understand deep in constructor
+    6, understand deep in interface
+    7 . understand deep in abstraction
 
 
