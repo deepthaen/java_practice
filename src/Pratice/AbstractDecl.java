@@ -1,2 +1,8 @@
-package Pratice;public class AbstractDecl {
+package Pratice;
+
+public abstract class AbstractDecl {
+
+    public abstract void company();
+    public abstract void depart();
+
 }

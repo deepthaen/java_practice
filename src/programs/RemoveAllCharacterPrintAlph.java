@@ -12,6 +12,5 @@ public class RemoveAllCharacterPrintAlph {
         System.out.println("String s::" + s);
         String res= s.replaceAll("[^A-Za-z]+", "");
         System.out.println("Print only Alph :: " +res);
-
     }
 }

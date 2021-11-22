@@ -1,2 +1,15 @@
-package Pratice;public class AbstractExtend_4 {
+package Pratice;
+
+public class AbstractExtend_4 extends Abstract_4{
+
+
+    @Override
+    public void college() {
+        System.out.println("pesit");
+    }
+
+    @Override
+    public void city() {
+        System.out.println("mysore");
+    }
 }

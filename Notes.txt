@@ -203,7 +203,7 @@ What is Abstraction ?
 
 
 Questions ::
-    1. Create String buffer,string builder and use some methods and list all methods available
+    1. Create String buffer,string builder and use some methods and list all methods available - yet to discuss
     2. Calculate sum of array - done
     3. write a code swap 2 numbers  - done
     4. Write a code replace all and print only alphabets (input :: sdfghj1234567@#$%^asdfg) - done
@@ -214,5 +214,93 @@ Questions ::
     5. understand deep in constructor
     6, understand deep in interface
     7 . understand deep in abstraction
+
+
+19/11/2021
+-
+Diff btw Abstract and interface?
+    -- interface
+        -- it is a mechanisam to declare methods, when we donon what has to be implementation
+        -- we add interface keyword instead of class
+        -- we can declare methods here and implement in different classes
+        -- here we can achive 100% abstraction
+        -- not manditorily we shud mention public
+        -- the interface can be used in different class by using implements keyword
+    -- abstract
+        -- it is a kind of class, which we add in the place class name
+             public abstract class name{}
+        -- we can declare method and we can implement also
+        -- here 100% abstraction is not possible
+        -- we can access abstract class by using extends
+        -- here when we want declare a method, we have to add abstract in method
+            abstract void method():
+
+
+When we go for interface?
+    -- when we dono actual requirement, then to just declare what has to be done
+
+When we go for Abstract?
+    -- we go when we have partial requirement, where in i can declare and implement as well
+
+
+abstract vs Abstraction ?
+    abstract : computer science
+     its kind of class, where we declare and implement methods
+    abstraction :: concept (Flow chart)
+        its a oops concept
+
+
+oops ::
+    Abstraction
+    Polymorpyshm
+    Encapsulation
+    Inheritance
+What is compile and run time error?
+
+Questions ::
+    Create interface and implemt in different class - done
+    create 2 interface and implement in different class - done
+    create interface and implment in one class and extend to different class and call methods in main method - done
+    Create interface
+        create retunable method   -- explain return concept
+        create non retunable method
+        create parametrised method(String name)  -- explain return concept
+        check wether u can create constructor ? NO
+    What is interface   ?
+    - Interface is process where it will hide implemention and show function declaration
+    - we can achive 100% Abstraction
+    - we can have constructor in intrface
+    - it will be  public final static and Abstract
+    - Will not conatin concetre method
+
+
+    Create abstract class and extend to other class - done
+    Cretae 2 abstract class and try to extend both   ? - Not Possible
+    Create abstract class and extend to other class and extend to other class and write in main method - done
+    Create abstract class with only declaration - done
+    Create abstract class with only implementation - done
+    Create Abstract class with both declare and implementation - done
+
+    what is abstract?
+     - Abstract is kind of class which is access specififer
+     - We go for Abstract when we does not have compllete requirment clarification
+     of application, let say we have req clarication some fucntionality and does
+     not have req clarification on few other part of appli then we go for abstract
+      - In ABstract class we can have method declaration and method impelemention both
+      - In abstract class if anyone method has just method declaration then have
+      use abstract as keyword for method declaration and class
+      - 100% abstraction is not possible
+
+    SUm from 1to 100 numbers? - Dome
+    i will give a character, print what ASCII value for it (Ex = A=60 a=97) - done
+
+
+
+
+
+
+
+
+
 
 
