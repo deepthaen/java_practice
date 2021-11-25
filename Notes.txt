@@ -283,16 +283,181 @@ Questions ::
 
     what is abstract?
      - Abstract is kind of class which is access specififer
-     - We go for Abstract when we does not have compllete requirment clarification
-     of application, let say we have req clarication some fucntionality and does
+     - We go for Abstract when we does not have complete requirement clarification
+     of application, let say we have req clarification some functionality and does
      not have req clarification on few other part of appli then we go for abstract
-      - In ABstract class we can have method declaration and method impelemention both
+      - In Abstract class we can have method declaration and method implementation both
       - In abstract class if anyone method has just method declaration then have
       use abstract as keyword for method declaration and class
       - 100% abstraction is not possible
 
-    SUm from 1to 100 numbers? - Dome
+    Sum from 1to 100 numbers? - Dome
     i will give a character, print what ASCII value for it (Ex = A=60 a=97) - done
+
+*** Doubt - when will be constructor called, when it be executed ?
+    -- when a object is created, first constructor will be called
+            What constructor will be having ?
+                it will have which have assigned anything in current class
+                    this.driver = driver;
+
+
+
+OOPS ::
+
+Abstraction ::
+    what is abstraction?
+        -- HIde Implementation and show functionality
+    where we use Abstraction ?
+        -- we use in Interface and abstract
+        -- in interface we hide implementationa nd show functionality
+            -- hide implementation -- when we click on method it will take to declaration
+
+
+Inheritance ::
+    what is inheritance ?
+        -- accessing something from child class to super class
+    How we inherit ?
+        -- by using Extends and implements
+    where we use ?
+        -- We use when we want to inherit any class or an interface or abstract class
+    super ?
+        Accessing something from parent class or sub class
+
+
+Question  ::
+    Calucate sUM of 1 to 100 ?
+
+    int a =1;
+    int b=5;
+
+    o/p = 1+2+3+4+5 = 15
+
+    First appraoch :: I will use for loop and traverse from a to b and keep adding
+    Second Approach :: using N naturals number, N*(N+1)/2
+
+ TIme complexity::
+  BEST case
+  WORST case
+
+Question ::
+    Factotial of A number ?
+    int a =5;
+    o/p = 5*4*3*2*1 = 125
+
+    first appraoch ::traverse till a number
+
+    int a=0;
+    int temp=1;
+    for(int i=a;i>=1;i--){
+        temp=temp*i;
+    }
+    Second Appraoch ::  recursion
+    int a=5
+        public int factorial(int a){
+            return a*factorial(a-1);
+        }
+
+Sort Array ::
+
+i/p :: [1,3,4,5,7,2]
+o/p :: [1,2,3,4,5,7]
+---> i will travese through complete array
+     use two for loop nested for loop
+     inner for loop i will compare each index value and if first is less then second value then will move to next index
+     if first value is greater then second value then will move value ti temp variable and change positin
+
+    1. First approach by sort fnction
+     a.Array(sort)
+   2.   Sceond Approch by using will travese through complate and use two for loop
+
+
+Inheritance Example ::
+    1. BasePage
+        public static WebDriver laucnhBrowser(){
+            driver = new ChromeDriver();
+            return driver;
+        }
+    2. LoginPage extends BasePage
+        public static void loginApp(WebDriver driver){
+            driver.findelement.click();
+        }
+
+    3. Test extends LoginPage
+        public static vois main(String[] arg){
+            WebDriver driver = launchBrowser();
+            loginApp(driver);
+        }
+
+   Example 2 ::
+   1. BasePage
+           public static WebDriver laucnhBrowser(){
+               driver = new ChromeDriver();
+               return driver;
+           }
+       2. LoginPage extends BasePage
+           public static void loginApp(){
+                driver=launchBrowser();
+               driver.findelement.click();
+           }
+
+       3. Test extends LoginPage
+           public static vois main(String[] arg){
+               loginApp();
+           }
+
+
+Encapsulation ::
+    Encap - collect form information
+    Insulation - Set something or put something
+
+    Tablet - some medicine, apply to body
+
+    Def :: wrapping data and code  into a single unit
+
+    1. Getter
+    2. Setter
+    3. Data hiding
+
+    Example ::
+        public class cse(){
+            public String students;
+            public String teacher;
+
+            public void setStudents(String students){
+                this.students =students;
+            }
+            public String getStudents(){
+            return students;
+            }
+
+        }
+
+        main(){
+            Cse c = new Cse();
+            c.setStudents("Deeptha");
+           String stu =  c.getStusents();
+        }
+
+Polymorphysim ::
+    poly -- many
+    MOrpyshm - forms
+
+    -- Over loading
+    public void travel(String type)//bus,car
+    public void travel(String type, int count)
+    public void travel(String type, int count, String place)
+    public void travel(String place, int count);
+    public void travel(String type,long size)
+
+    -- Over Riding
+        Lane 1  - vehicle(String model)
+        Lane 2  - vehicle(String model)
+        Lane 3  - vehicle(String model)
+
+
+
+
+
 
 
 
