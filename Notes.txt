@@ -455,6 +455,121 @@ Polymorphysim ::
         Lane 3  - vehicle(String model)
 
 
+    over loading ::
+        Performaing same action with different parameters
+        writing same method names with different parameters
+      why::
+        BCZ when we have same fucntional with different usability
+            A car can used in different ways
+    Over Riding ::
+        Having same method name in different class(Example interface declaration)
+        in interface we decalre and overide any many classes as u require.
+
+    Run time polymorphysim ::
+        overRiding
+        While executing u will face an error if any issues in coiding
+
+    Compiletime polymorpyshm ::
+        Over loading
+        while writing code itself , comipler will throw error
+
+
+Topics of OOPS important ** revising
+       Interface
+       Abstract class
+       Inheritance
+       abstraction
+       polymorpyshm
+       encapsulation
+
+
+Mock interview Concepts
+    Constructor
+    Access specifier
+    class, object
+    oops concepts
+    Package, jvmm,jre,jdk
+    Need each one example what ever i except.
+
+Mock Interview Questions ::
+
+    1. Create Java project -- 10
+    2. Create Text file  --- 0
+    3. what is class -- 8
+    4. what is package -- 9
+    5. Can u explain few deafult package  -9
+    6. Java version -- 1
+    7. what is object - 7
+    8. super class of package - 10
+    9. what is mean by oops -9
+    10. different oops concept-  9
+    11. what is constructor- 0
+    12. can u create deafult constructor and use in other class - 5
+    13. wt are access specifiers -10
+    14. usage of protected -5
+    15. Access modifiers -- 2
+    16. Super - 9
+    17. this - 9
+    18. Wt is interface - 10
+    19. wt is abstract class - 9
+    18. Inheritance - 6
+    19. Abstraction - 5
+    20. Encapsulation - 7
+    21. Polymorpyshm - 6
+    22. over loading - 2
+    23. over riding  - 2
+    24. why, what, wher  - 0
+
+-----
+
+Basic functions java
+
+    1. if else
+    2. for loop
+    3. enum
+    4. switch case
+    5. try catch
+    6. for each
+
+Questions ::
+    1. Why string is immutable
+    2. diff btw interface, class and abstract class
+    3. create pojo for ur class details - name, age, rollnum, and set and get values
+    4. [1,2,3,4,5,6,7] -- iterate using for each loop and sum all numbers
+    5. create enum and use in main class -- use Depatment (CSE,ECE,MECH
+    6. study about try cacth finally
+    7. create one class using over loading
+    8. create one example using over riding
+    9. create class and use extends
+    10. create abstarct and use extends
+    11. create interface and use implements
+    12. creaet static methods and re use in other class
+    13. create non static methods and re use in other class
+    14. create returnable methods and resuse in other class
+    15. create constructor and re sue in other calss
+    16. create parametrise constructor and resiue in other calss
+    17. create constructor and use super keywors
+
+
+
+Tmrw's topics :;
+
+    Heap memory
+    Stack Momeory
+    Core java and oops and COllections and Datastuctures and algorithms
+    Threads,
+    SingleTon,
+    Finally,
+    Exception
+    Garbage
+    serialization
+
+
+
+
+
+
+
 
 
 
