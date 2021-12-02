@@ -6,7 +6,7 @@ public class ChildClassParameterzeConstr {
 
 
     public static void main(String[] args) {
-        ParentConstruct p  = new ParentConstructor("driver");
+       ParentParamConstr p = new ParentParamConstr("Chrome");
 
 
     }

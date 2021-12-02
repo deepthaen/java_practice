@@ -667,7 +667,7 @@ TThread ::
     -- its a execution of a program
 
 
-DDoubts on COnstructors::
+DDoubts on COnstructors:: SUper in COnstructor
 
 
 

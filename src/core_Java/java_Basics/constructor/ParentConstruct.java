@@ -9,9 +9,5 @@ public class ParentConstruct {
     }
 
 
-    String driver;
-    public ParentConstruct(String driver){
-        this.driver = driver;
-        System.out.println("driver");
-    }
+
 }

@@ -1,6 +1,6 @@
 package core_Java.java_Basics.constructor;
 
-public class ChildClassSuperInCOnstr {
+public class ChildClassSuperInCOnstr extends ParentConstruct{
 
 public ChildClassSuperInCOnstr(){
     super();
