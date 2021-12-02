@@ -532,24 +532,60 @@ Basic functions java
     6. for each
 
 Questions ::
-    1. Why string is immutable
-    2. diff btw interface, class and abstract class
-    3. create pojo for ur class details - name, age, rollnum, and set and get values
-    4. [1,2,3,4,5,6,7] -- iterate using for each loop and sum all numbers
-    5. create enum and use in main class -- use Depatment (CSE,ECE,MECH
-    6. study about try cacth finally
-    7. create one class using over loading
-    8. create one example using over riding
-    9. create class and use extends
-    10. create abstarct and use extends
-    11. create interface and use implements
-    12. creaet static methods and re use in other class
-    13. create non static methods and re use in other class
-    14. create returnable methods and resuse in other class
-    15. create constructor and re sue in other calss
-    16. create parametrise constructor and resiue in other calss
-    17. create constructor and use super keywors
+    1. Why string is immutable - done  need to study more
+    2. diff btw interface, class and abstract class - done
+    3. create pojo for ur class details - name, age, rollnum, and set and get values - done  - need to study more
+    4. [1,2,3,4,5,6,7] -- iterate using for each loop and sum all numbers - done
+    5. create enum and use in main class -- use Depatment (CSE,ECE,MECH) - done  - need to study more
+    6. study about try cacth finally  - Done - need to study more and ask doubt
+    7. create one class using over loading - Done
+    8. create one example using over riding - Done
+    9. create class and use extends - Done
+    10. create abstarct and use extends -Done
+    11. create interface and use implements - Done
+    12. creaet static methods and re use in other class  - Done
+    13. create non static methods and re use in other class - Done
+    14. create returnable methods and resuse in other class - Done
+    15. create constructor and re sue in other calss  - Done
+    16. create parametrise constructor and resiue in other calss - Done
+    17. create constructor and use super keywors - Done
 
+
+
+1. Why String is immutable?
+ because String objects are cached in String pool. Since cached String literals are shared between multiple clients there is always a risk,
+
+
+ 2. diff btw interface, class and abstract class
+
+      Interface - hide implemtion and show declartion
+      Abstract - which has implemention and declaration both
+      Class - which has method, statis block, instace block, variable constructor, no just method declaratio n
+
+
+  3. create pojo for ur class details - name, age, rollnum, and set and get values
+
+   4. [1,2,3,4,5,6,7] -- iterate using for each loop and sum all numbers
+
+
+Try Catch Finally ::
+
+Every try block should be immediately followed either by a catch block or finally block.
+code which is prone to exceptions is placed in the try block
+exception occurs, that exception occurred is handled by catch block
+Try{
+Statement - code
+}
+Catch (exeption){
+Statement - catch execption
+}
+Finally {
+Statement --  // The finally block always executes.
+
+}
+Finally ::
+
+finally block of code always executes, irrespective of occurrence of an Exception.
 
 
 Tmrw's topics :;
@@ -563,6 +599,75 @@ Tmrw's topics :;
     Exception
     Garbage
     serialization
+
+
+Heap Memory ::
+    -- on after creating an object, the reference of object will be store till class is ended
+    Example :: i have only 20MG capacity
+        Webdriver driver = new ChromeDeriver(); / 5MB memory
+        Webdriver driver2 = new ChromeDeriver();/ 5MB memory
+        Webdriver driver3 = new ChromeDeriver();/ 5MB memory
+        Webdriver driver4 = new ChromeDeriver();/ 5MB memory
+        Webdriver driver5 = new ChromeDeriver();/ 5MB memory
+        Webdriver driver6 = new ChromeDeriver();/ 5MB memory
+    -- this heam memory will store in JVM
+
+
+Stack Memory ::
+    Stack -- store one after the other -- LIFO -- Last in First OUT
+    Example ::
+        U have 5 applications running on ur laptop
+            1. chrome
+            2. intelij
+            3. postman
+         Chrome, Intelij, Postman
+         int i=10;
+
+Core Java ::
+    -- Basic concepts of java
+    -- inbuilt libraries
+    -- packages
+    -- inbulit functions
+    -- classes, object, data types, keywords, operatores, methods,
+    -- Thread, Variables, Loops, conditions, Strings, arrays
+
+
+OOPS ::
+    -- Inheritance
+    -- polymorphysm
+    -- abstraction
+    -- encapsulation
+    -- interface
+    -- aver loading
+    -- over riding
+    -- constructor
+
+Collections of Java::
+    List, HashMap, set, queue,
+
+    List  -- ArrayList, Lindlist, Stack
+    set   -- HashSet, LinkdHashset
+    Queue -- Array Queue, Deque
+
+Data Structures ::
+    Linear or symetric or dynamic
+    List
+    Queue
+    Map
+    Set
+    Queue
+    LinkedList
+    Stack
+
+
+TThread ::
+    ClassA a = new ClassA();        // it will store in JVM heap memory
+    Start ---- work and use it --- End
+
+    -- its a execution of a program
+
+
+DDoubts on COnstructors::
 
 
 

@@ -10,7 +10,9 @@ public class ParentConstructor {
         System.out.println("Running parent "+a+b);
     }
 
+
     public void run(){
+
         System.out.println("running run method");
     }
 }

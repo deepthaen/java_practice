@@ -28,6 +28,7 @@ public class SwitchEnumClass {
     }
 
     public static void main(String[] args) {
+
         switchenum(Browsers.CHROME);
     }
 
