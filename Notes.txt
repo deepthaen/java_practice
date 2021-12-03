@@ -554,11 +554,16 @@ Questions ::
 
 1. Why String is immutable?
  because String objects are cached in String pool. Since cached String literals are shared between multiple clients there is always a risk,
+ String - is a class and not premitive
+ Immutable -- Which cannot be changed
+ String s ="HD";
+
+
 
 
  2. diff btw interface, class and abstract class
 
-      Interface - hide implemtion and show declartion
+      Interface - show declartion and write implemention is implemeted class
       Abstract - which has implemention and declaration both
       Class - which has method, statis block, instace block, variable constructor, no just method declaratio n
 
@@ -668,6 +673,9 @@ TThread ::
 
 
 DDoubts on COnstructors:: SUper in COnstructor
+
+Thread  ::
+    https://www.scientecheasy.com/2020/08/thread-in-java.html/
 
 
 
