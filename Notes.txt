@@ -676,6 +676,95 @@ DDoubts on COnstructors:: SUper in COnstructor
 
 Thread  ::
     https://www.scientecheasy.com/2020/08/thread-in-java.html/
+    -- Thread is light weight process
+    -- whcih has start and end --and path for a execution
+    -- By default main method is a thread
+    -- We can extend thread and write anything on run function
+    -- on creating a thread object, a new instance will be created and current reference id can be fetched
+    -- Thread.getcurrentThread().getId();
+    -- Thread t = new Thread();
+    -- public class singleThread extends Thread{
+        public void run(){
+            sout("Running Single thread object");
+        }
+    }
+
+MultiThread ::
+    -- it is used oif Thread concept
+    -- it can used when we want to run in a paralle or cuncurrent execution
+    -- on each thread it eill have unique thread reference or new instance
+    -- public class multiThread extends Thread{
+            public void run(){
+                sout("Running thread "+ Threas.currentThread().getId());
+            }
+
+            main(){
+                multiThread t1 = new multiThread("IE");
+                multiThread t2 = new multiThread("chrome");
+                multiThread t3 = new multiThread("firefox");
+                t1.satrt();
+                t2.satrt();
+                t3.start();
+            }
+    }
+
+
+SingleTon class::
+        -- it can create only one instance at a time
+        -- it can be accessed only by getInstance()
+        -- It looks similar as normal class, but accesing a insatnmce is different
+        -- its different, where we dont use constructor
+        public class WebDriver{
+            static Webdriver driver = null;
+
+            public static Webdriver getInstance(){
+                if(driver == null){
+                    driver = new ChromeDriver();
+                }
+            return driver;
+            }
+
+            main(){
+               driver =  WebDriver.getInstance():
+               driver.get();
+               driver.click();
+
+            }
+
+        }
+  ***** Lazy Initialsation, Early initialisation
+
+What design pattern u r using Automation Framework?
+
+    -- SingleTon patternn
+    -- Page Object or factory pattern
+    -- Builder pattern
+    -- abstract pattern
+
+
+Final, Finally, Finalise ::
+
+    Final ::
+        public final String PROJECT = "SOM";
+        it is used for making consatnts variabels
+
+    Finally  ::
+        used in Try catch block
+        Even exception is caught or not finally block will be executed
+
+    Finalise::
+        public static void method(){
+        Classs a = new Class();
+            Starts
+            executes
+            ends
+            a.quit();
+            // by default java will throw in garbage , it removes from stack or heap memory
+        }
+
+
+
+
 
 
 
