@@ -563,9 +563,11 @@ Questions ::
 
  2. diff btw interface, class and abstract class
 
-      Interface - show declartion and write implemention is implemeted class
-      Abstract - which has implemention and declaration both
-      Class - which has method, statis block, instace block, variable constructor, no just method declaratio n
+      Interface - Its mechanisum, where just show method declaration, we use interface to on declarcation, we wite implention
+      in its implemeted class, use implements keyword, we can achive 100% abstaction
+      Abstract - its kind of class, which has implemention and declaration both, will write implemention in sub class by extending it,
+             100% abstraction is not possible
+      Class - its template or bluprint, which has group object, which has method, statis block, instace block, variable constructor, no just method declaratio n
 
 
   3. create pojo for ur class details - name, age, rollnum, and set and get values
@@ -761,6 +763,134 @@ Final, Finally, Finalise ::
             a.quit();
             // by default java will throw in garbage , it removes from stack or heap memory
         }
+
+
+Heap will run in queue system, one after other objects -
+    it will store in KVM , in order
+    A a = new A();
+    B b= new B();
+
+ Static Array ::
+ Single dimenstional Array
+    int[] a ={1,2,3,4};
+    or
+    int[] a =new int[2];
+    a[0]=1;
+    a[1]=2;
+    a[2]=5// this will throw array out of bound exception
+
+ Two dimensinal Array ::
+    int[][] a =[[1,2,3],[4,5,6],[7,8,9]] ;
+    int[][] a =new int[row][cow];
+
+Dynamic array ::
+    ArrayList<Integer> arr = new ArrayList<>();
+    arr.add(1);
+    arr.add(1);
+    arr.add(1);
+    arr.add(1);
+    arr.add(1);
+
+List and ArrayList ?
+    List :: it is interface
+            it is collection of java
+            it has all functions which are present in Arraylist
+                Interface  i= new interfaceImplClass();
+                List i = new ArrayList<>();
+    ArrayList ::
+            it is a class
+            it has predefind methods -- add,remove,size
+            it implements List
+            it is part of collection framework
+
+
+Solve problem array ::
+
+        int[] arr = [1,2,3,4,5]; =15
+        [1,3,6,10,15]
+        we need to sum
+
+        for(int i=0;i<arr.size-1;i++){
+            arr[i]=arr[i]+arr[i+1];
+        }
+
+        int[] prefix = new int[arr.length]
+        prefix[0]=arr[0];
+        for(int i=1;i<arr.length;i++){
+            prefix[0]
+        }
+
+Sort an array ::
+    int[] arr = {1,3,5,4,2};
+    o/p =1,2,3,4,5
+
+
+Aiming ::
+    25 -- just go with wt  u have now
+    40 - then below is required
+
+Road Map of Next Years ::
+
+Current Trend ==>
+    Automation ::
+        selenium(Web UI)
+        Rest Assured( API Backend)
+        Database (Mysql, Oracel, Mongo)
+        Appium (Mobile android, IOS)
+
+    Programming ::
+        Java  -- proffesional
+        python
+        Golang
+        Java script
+
+    Process ::
+        Agile
+        Scrum
+        STLC
+        SDLC
+        BGLC
+        Sprint
+        Functional, sanity, regression, exploratory, system integration
+        Team handling
+
+    Problem solving ::
+        Minimum approach
+            1. Base condition
+            2. Problem analysing and requirment confirmation
+            3. Boundary cases
+            4. Time complexity
+            5. Algorithm --steps to solve a problem
+            6. SUDO code -- actual code
+
+    Data structures ::
+       Hashmap, List, Set, Linked list, Stack
+
+    Oops (Core) ::
+        Inheritance, abstraction, polymorphysim, Encapsulation, Interface, abstract class, Thread, Singleton
+
+    Framework ::
+        Page object model
+        Cucumber
+        Modular driven
+        Method driven
+        Data driven
+        Test driven
+        Hybrid model
+        Cypress
+        protractor
+        Mocha
+        Karate
+        Robot framework
+
+    Design pattern ::
+        Singleton pattern
+        Abstract pattern
+        Page factory pattern
+
+Future Trend ==>
+
+
 
 
 
