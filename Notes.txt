@@ -891,6 +891,67 @@ Current Trend ==>
 Future Trend ==>
 
 
+Collections ::
+
+    List ::
+        -- when we have a group of people arrnageing them in a sequence
+        -- u have 60 members of students
+            ["hari","Deeptha","ram","Lolakshi"]
+        -- A group of Objects, strings, integers
+         its called collections
+         -- we will store elements dyanamically on run time
+        -- List is a interface
+            it has predefined method
+                get
+                size
+                add
+        List<String>
+        List<int>
+        List<Object>
+
+    ArrayList ::
+        Array -- it is collection of static and dynamic array
+        List     -- its a interfacea dn collections of object and storing in a sequence
+
+        Arraylist -- its class
+
+        Arraylist implement List
+
+        ArrayList<String>
+        ArrayList<Int>
+
+     2 ways ::
+        ArrayList<String  array = new ArrayList<><();
+        List<String> list = new ArrayList<>();
+
+ List<WebElement> listofSHipments = driver.findElements(By.xpath("//div[text()='Shipment ID']/../../../../div[2]/div"));
+        for (int i = 0; i < listofSHipments.size(); i++) {
+           String Shipment = driver.finelement(by.xpath("//div[text()='Shipment ID']/../../../../div[2]/div["+i+"]/div/div[2]"))
+        }
+
+Map ::
+     -- Map is concept of collections
+     -- it is a interface
+     -- it has pre defined methods decalred in interface
+     -- it can store values in KEY and value pair
+     syntax :: [Key :: value]
+     name = deeptha
+     UAT= 124
+     SIT= 456
+     url =ajio.com
+     somurl =som.ajio.com
+     dburl=12345678
+
+     map.get(somurl)
+     map.put(somurl,"som.ajio.com")
+
+        -- duplicates are not allowed
+        -- duplicates are overided with latest value
+
+
+
+
+
 
 
 
