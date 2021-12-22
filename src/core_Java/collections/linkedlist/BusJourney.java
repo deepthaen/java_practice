@@ -17,15 +17,18 @@ public class BusJourney {
     // BUS - Conductor (Head point in bangalore) - issue tickets and find count (update in box) - null
 
     // 5, 10, 6, 20
-    public void addPeople(int data){//5, 10 ,6,20
-        Bus newPeople = new Bus(data); //5,10,6,20 - null
-        if(startPoint==null){ //startpoint=5,10
-            startPoint=newPeople; //newpeople -5
-            endPoint= newPeople; //newpeopel=5
+    public BusJourney addPeople(BusJourney node,int data){//5, 10 ,6,20
+        Bus newPeople = new Bus(data);
+        if(node.startPoint==null){ //startpoint=5,10
+            node.startPoint=newPeople; //newpeople -5
         }else{
-            startPoint.nextStop=newPeople;
-            endPoint=newPeople;
+            Bus temp = node.startPoint;
+            while (temp.nextStop!=null){
+                temp=temp.nextStop;
+            }
+            temp.nextStop=newPeople;
         }
+        return node;
     }
 
     public void delete(int delete){//6
@@ -41,23 +44,35 @@ public class BusJourney {
         }
     }
 
-    public void delete(BusJourney deleteNode,int delete){//9
-            //5,10,9,6
-        Bus temp = deleteNode.startPoint; //5
-        Bus tempPrev =null;
+    public BusJourney delete(BusJourney node,int delete){//9
+            //5,10,9,6,1,7,
 
-        while (temp!=null && temp.data!=delete){
-            tempPrev=temp;
-            temp =temp.nextStop;
+        Bus temp = node.startPoint;
+        Bus tempPrev= null;
+        //5.10,9,6
+        while(temp!=null && temp.data!=delete){ // 5!=9, 10!9, 9==9
+            tempPrev=temp; // 5,10
+            temp=temp.nextStop; // 10,9
         }
 
-        if(temp!=null){
-            tempPrev.nextStop=temp.nextStop;
+        if(temp!=null){ //YES
+           //tempPrev =5,10-6null
+            //temp =5,10,9
+            tempPrev.nextStop=temp.nextStop;//6
         }
+    return node;
+    }
+
+    //[1,2,10,3,5,6,7,8]
 
 
+    public void display(BusJourney node){
 
-
+        Bus temp=node.startPoint;
+        while (temp!=null){
+            System.out.println(temp.data+" ");
+            temp=temp.nextStop;
+        }
     }
 
     /**
@@ -127,10 +142,12 @@ public class BusJourney {
 
     public static void main(String[] args) {
         BusJourney b = new BusJourney();
-        b.addPeople(5);
-        b.addPeople(10);
+        b.addPeople(b,5);
+        b.addPeople(b,10);
         b.delete(b,10);
-        b.addPeople(6);
-        b.addPeople(20);
+        b.addPeople(b,6);
+        b.addPeople(b,20);
+        b.addPeople(b,40);
+        b.display(b);
     }
 }
