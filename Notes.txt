@@ -1087,9 +1087,99 @@ Stack ::
         s.push(10);
     }
 
+Stack - it has order and sequence
+linkedlist - it has order and sequence
+Linear
+
 Set ::
     -- Set is extended from Collection frmaework
-    -- it doesn't
+    -- it doesn't have any order or any sequence
+    -- it reads randamly
+    -- it doesnt allows duplicates
+    -- it is a interface
+
+    Set<String> set = new HashSet<>();
+    add()
+    AddAll()
+    ReatinAll()
+    clear
+    size
+
+When we go foir set
+    WindowHandles in selenium
+    Set<> windows = driver.getWindowHandles();
+    WebDriver driver = new ChromeDriver();
+            Set<String> windows = driver.getWindowHandles();
+            Iterator<String> iterat = windows.iterator();
+            while(iterat.hasNext()){
+                String window = iterat.next();
+            }
+
+    -- when ever u dont require in order
+    -- fetch randomly
+
+
+HashMap<Key,Value> --> key value pair  -- Prority Files,
+ArrayList<String> -- when we want to store in aindex based
+Linkedlist<String> - when we want to store in link based
+Stack<String> - we go when we want to remove,add, get LIFO - Order detail page
+Set<String> - we go whenwe dont need to store in order, and datta should be uniqic
+             - used in whislist screen
+
+
+Queue ::
+    -- is a linear data structure
+    -- it has order and sequence
+    -- FIFO[1,2,3,4,5,6,7,8,9]
+    - front, rear
+    - Enqueue(Ad) , Deque(Remove)
+    -- u can only deque from front side, bcz of FIFO policy
+    -- Eneque can be donr only At last(rear)
+    -- Priority queue
+    -- LinkedlIst
+
+    Enqueue
+    Dequeue
+    Front
+    rear
+    size;
+    int[] arr = new int[1000];
+    int capacity;
+
+    Queue(int size){
+        this.size=size;
+        front=0;
+        rear=0;
+        capacity =size;
+    }
+
+    public void enqueue(int data){
+        rear = rear%capacity; // 2%5 = 2
+        arr[rear]=data;
+        rear++;
+    }
+
+Heap, Tree, Matrix, Graph
+//List, linkedlist, hashmap, set, binary search, stack, queue
+// LinkedList, stack using linkedlist,
+// Queue - Priority queue and  queue using Linklist
+
+
+implemation ::
+    linkedlist -- add, get, delete
+    Stack -- lIFO (push, pop, peek)
+    Queue -- FIFO(enqueue, deeque)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
