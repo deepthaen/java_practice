@@ -1,0 +1,140 @@
+
+******************** Selenium ************************
+
+Selenium 1.0 - record and playback
+Selenium RC
+Selenium 2.0 - WebDriver
+Selenium 3.0
+
+Web Development  UI ::
+    HTML
+    CSS
+    PHP
+    Java script
+    Ajax
+    Jquery
+    React JS
+    TypeScript
+
+  Above all can be determined in single name - DOM
+
+  DOM -
+    Document
+    Object
+    Model
+
+Selenium ::
+    Developed based on Java script
+
+Pre_Request for Handling UI automation ::
+    Launch Browser
+        Capabilities
+        notifications
+        permision
+        load page
+    Take contol of browser
+        get control using webdriver
+        u need browser name
+        location where u r laucnhin
+        Operating system
+        Instance of browser
+        document of browser
+    Close
+    Refresh
+    Back
+    Forward
+
+    Actions
+        Click
+        type
+        dragging
+        scroll up
+        scroll down
+        select options
+        mouse hover
+    Handle something in browser
+        switching window
+        open new window
+        handle popups
+        dropdowns
+    Find element
+    List of elements
+    traversing from front to last
+    travesing last to front
+    travesing with realtive path
+    tranesing eith absolute path
+    find with uniq ID
+    find with inbuilt java script locators
+        css
+        tags
+        id
+        text
+    Take screenshot
+    Loading pages ::
+         Network calls
+         sleep (wait)
+         Implicitly i will wait
+         Explicitly i will wait
+         frequently i will wait
+
+
+Browsers supports Seelnium ::
+    Chrome
+    Firefox
+    Edge
+    Safari
+    opera
+    Internet Explorer
+
+Diff btw chrome and chromimum???
+
+Operating systems supports ?
+    Windows
+    Mac
+    Unix
+    Linux
+
+Selenium-Webdriver_2_3_6.jar
+Selenium_webDriver
+    src/main/java
+        org
+          seleniumhq
+            com
+               WebDriver.interface
+               RemoteWebdriver.Java
+               ChromeDriver.java
+
+    pom.xml
+        <artifactid>org.selenium.com<srtifact>
+        <groupid>Selenium Webdriver<>
+        <Version>2.3.6</Version>
+
+        The aboive will be builded in different way
+            Jar
+            Maven dependency -- Central maven reposiroty
+                it will be in .m2 public repository
+
+WebAutomation
+    use selenium jar and use there fucntions
+
+
+Types to handle selenium project
+    Java Project
+    Maven project
+    Gradle Project
+
+
+can u write syntaxs for locators ?
+    id
+    text
+    name
+    linktext
+    partiallinktext
+    css
+    xpath
+        Absolute
+        relative
+        regular expression
+        following siblings
+        preceedings
+

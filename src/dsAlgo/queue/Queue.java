@@ -40,6 +40,16 @@ public class Queue {
             System.out.println("print front :: "+arr[front]);
         }
     }
+    public int search(int data){
+        for (int i = front; i <rear; i++) {
+            if(arr[i]==data){
+                System.out.println("found ::"+data);
+                return i;
+            }
+        }
+        System.out.println("nout found:: "+(-1));
+        return -1;
+    }
 
 
     public static void main(String[] args) {
@@ -52,6 +62,7 @@ public class Queue {
 
         q.dequeue();
         q.print();
+        q.search(300);
 
     }
 

@@ -50,6 +50,22 @@ public class Stack {
 
     }
 
+    public int searchElement(int data){
+        for (int i = top; i>-1 ; i--) {
+            if(arr[i]==data){
+                System.out.println("found element ::  "+data);
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public int size(){
+        System.out.println("Size of stack :: "+top);
+        return top;
+    }
+
+
 
     public static void main(String[] args) {
         Stack st = new Stack();
@@ -62,6 +78,8 @@ public class Stack {
         st.peek();
         st.printAll();
         st.isEmpty();
+        st.searchElement(15);
+        st.size();
     }
 //Push, pop, peek, top, print, isempty
 

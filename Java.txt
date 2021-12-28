@@ -1119,7 +1119,7 @@ When we go foir set
     -- fetch randomly
 
 
-HashMap<Key,Value> --> key value pair  -- Prority Files,
+HashMap<Key,Value> --> key value pair  -- Property Files,
 ArrayList<String> -- when we want to store in aindex based
 Linkedlist<String> - when we want to store in link based
 Stack<String> - we go when we want to remove,add, get LIFO - Order detail page
@@ -1159,16 +1159,20 @@ Queue ::
         rear++;
     }
 
-Heap, Tree, Matrix, Graph
+linked list, Heap, Tree, Matrix, Graph
 //List, linkedlist, hashmap, set, binary search, stack, queue
 // LinkedList, stack using linkedlist,
 // Queue - Priority queue and  queue using Linklist
+// seaarch element in stack - and Size
 
 
 implemation ::
     linkedlist -- add, get, delete
     Stack -- lIFO (push, pop, peek)
     Queue -- FIFO(enqueue, deeque)
+
+
+
 
 
 

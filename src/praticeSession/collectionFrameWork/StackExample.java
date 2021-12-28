@@ -34,7 +34,7 @@ public class StackExample {
 
     public void peek(){
         if(top>=0)
-        System.out.println(arr[top]);
+        System.out.println("peek  ::"+arr[top]);
 
     }
 
