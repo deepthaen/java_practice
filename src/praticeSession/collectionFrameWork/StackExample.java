@@ -14,7 +14,7 @@ public class StackExample {
         System.out.println("pushing"+data);
     }
     public void pop(){
-        if(top>0)
+        if(top>=0)
         System.out.println("poping "+arr[top]);
         top--;
 

@@ -1,0 +1,165 @@
+SQL ::
+
+    S - Structure
+    Q - Query
+    L - Language
+
+    CRUD
+    C - Create
+    R - read
+    U - update
+    D - Delete
+
+   SQl - Relational database
+    MySql
+    oracle
+    sql server
+    pstgre
+
+   NO Sql ::
+    MongoDB, Casandra
+
+    To get data, below syntax or words are used to relational btw query and data
+   Select
+   Update
+   Create
+   Insert
+   Delete
+
+  S.NO  NAME  AGE MOBILE DATE Amount
+  1     DEEp  30  9999
+
+  EXCEL ::
+    EXCEL file
+    Workbook
+    sheet
+    Headers
+    row
+    column
+    cell
+    celltype
+
+  Database
+    Schema
+    Table
+    Heders
+    Row
+    column
+    cell
+    celltype
+
+  The waus of accessing data ::
+    Select
+    From
+    where
+    And
+    OR
+    Distinct
+    DESC
+    ASC
+    Group by
+    Having
+    Order BY
+    MIN
+    MAX
+    COUNT
+    SUM
+    Joins
+    Sub Query
+    Outer Joins
+    Inner joins
+
+
+  SQL Language ::
+    DDl - Data definition Langauge (int, varchar, flowt, date)
+    DML - Data manupilation Language (order to shipment)
+    TCL - Transaction Control Language (Demand update)
+    DCl - Data Control Language ()
+
+
+  How u create EXCEL file?
+    - Micrsoft softwaer excel
+    - u create new file and give for it
+    -- u specify workbook for it
+    - u specify sheet
+    -- once u save, it saves in local driver(/users/Downloads/Deeptha/file.xlsx)
+
+  How u create SQL Data base ?
+    - Microsoft SQL need to be installed
+    - 127.0.0.1 : 8090/username/password
+    - u can create new database(Schema)
+    - u can create new table
+    - u can do data definition ()
+
+  To focus
+    RDMS
+    SQL, ORacle, Mongo
+    CRUD
+    Querys - inner, outer, sub query, max, min, group by, order by, having
+    Process- create, insert, update, delete, truncate, select
+    Disntict uniq
+
+
+    Sub Queries ::
+
+    select * from yfs_order_line where order_header_key
+    in(select order_header_key from yfs_order_header where order_no = 'FLA0001196066');
+
+
+Query::
+  select * from rave_inv_atp;
+
+  select * from rave_inv_atp order by modified_at desc;
+
+  select * from rave_inv_atp where tenant_id = 'AJIO';
+
+  select * from rave_inv_atp where tenant_id = 'AJIO' and seller_id = 'DV00300772';
+
+  select * from rave_inv_atp where seller_id = 'AJIO' OR seller_id = 'DV00300772i
+  select count(*) from rave_inv_atp where seller_id like  'DV%';
+
+  select seller_id from rave_inv_atp where tenant_id= 'AJIO' group by seller_id;
+
+  select * from rave_inv_atp where node in ('DV00300782', 'DV00300784');
+
+
+  select seller_id,node,tenant_id from rave_inv_atp;
+
+  select * from rave_inv_atp where tenant_id = 'AJIO';
+  select DISTINCT seller_id from rave_inv_atp where tenant_id='AJIO'; -- distint uinq values
+
+  select MAX(quantity) from rave_inv_atp where tenant_id='AJIO';
+
+  select MIN(quantity) from rave_inv_atp where tenant_id='AJIO';
+
+  select * from rave_inv_atp where quantity>100; -- who has greater than 100
+
+
+  select * from rave_inv_atp where quantity<100;
+
+  select * from rave_inv_atp;
+  select * from rave_inv_demand;
+
+
+
+
+ Outer and Inner
+    first inner will execute
+    seconf outer will execute
+Select order_header_key from yfs_order_header where order_no = 'FLA0001196066';
+
+select  * from yfs_order_line where order_header_key='20201117142114792489421';
+
+
+-- left and right
+
+select * from yfs_order_line where order_header_key in(select order_header_key from yfs_order_header where order_no = 'FLA0001196066');
+d
+
+--FLA0001196066 - line1 , line2
+
+
+
+
+
+

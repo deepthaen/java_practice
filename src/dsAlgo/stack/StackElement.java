@@ -12,12 +12,12 @@ public class StackElement {
 
     public void pushing(int data){
         arr[++top] = data;
-        System.out.println("Pushing" + data);
+        System.out.println("Pushing  :" + data);
     }
 
     public void pop(){
         if(top>=0){
-            System.out.println("poping Element" + arr[top]);
+            System.out.println("poping Element :" + arr[top]);
             top--;
         }
 
