@@ -98,6 +98,21 @@ SQL ::
     Querys - inner, outer, sub query, max, min, group by, order by, having
     Process- create, insert, update, delete, truncate, select
     Disntict uniq
+    primary key
+    Contraints
+    foriegn key
+    data integrity
+    normalization, denormalisation
+
+   -- automation script
+    using jdbc and ojdbc
+
+    -- connect data base
+    fetch query
+    fetch result
+    fetch multiple rows
+
+
 
 
     Sub Queries ::
@@ -108,20 +123,13 @@ SQL ::
 
 Query::
   select * from rave_inv_atp;
-
   select * from rave_inv_atp order by modified_at desc;
-
   select * from rave_inv_atp where tenant_id = 'AJIO';
-
   select * from rave_inv_atp where tenant_id = 'AJIO' and seller_id = 'DV00300772';
-
   select * from rave_inv_atp where seller_id = 'AJIO' OR seller_id = 'DV00300772i
   select count(*) from rave_inv_atp where seller_id like  'DV%';
-
   select seller_id from rave_inv_atp where tenant_id= 'AJIO' group by seller_id;
-
   select * from rave_inv_atp where node in ('DV00300782', 'DV00300784');
-
 
   select seller_id,node,tenant_id from rave_inv_atp;
 
@@ -152,14 +160,71 @@ select  * from yfs_order_line where order_header_key='20201117142114792489421';
 
 
 -- left and right
-
-select * from yfs_order_line where order_header_key in(select order_header_key from yfs_order_header where order_no = 'FLA0001196066');
+SUb Query ::
+   select * from yfs_order_line where order_header_key in(select order_header_key from yfs_order_header where order_no = 'FLA0001196066');
 d
 
 --FLA0001196066 - line1 , line2
 
 
+Inner Query ::
+  select * from yfs_order_line
+  INNER JOIN yfs_order_header
+  on yfs_order_line.order_header_key= yfs_order_header.order_header_key;
+
+   select * from yfs_order_line  -- outer qury table
+   INNER JOIN yfs_order_header  -- inner qury table
+    on yfs_order_line.order_header_key=yfs_order_header.order_header_key where order_no = 'FLA0001196066';
 
 
+select  * from yfs_order_line where order_header_key in (Select order_header_key from yfs_order_header where order_no = 'FLA0001196066');
+
+----
+
+Select order_header_key from yfs_order_header where order_no = 'FLA0001196066';
+
+select  * from yfs_order_line where order_header_key='20201117142114792489421';
 
 
+-- left and right
+
+select * from yfs_order_line where order_header_key in(select order_header_key from yfs_order_header where order_no = 'FLA0001196066');
+
+
+select * from yfs_order_line  -- outer qury table
+INNER JOIN yfs_order_header  -- inner qury table
+on yfs_order_line.order_header_key=yfs_order_header.order_header_key ;
+
+
+select * from yfs_order_line  -- outer qury table
+INNER JOIN yfs_order_header  -- inner qury table
+on yfs_order_line.order_header_key=yfs_order_header.order_header_key where order_no = 'FLA0001196066';
+
+
+select retail_price from yfs_order_line where order_header_key ='20201117142114792489421';
+
+select retail_price from yfs_order_line;
+
+-- Requiremnt is-- to find maximum reail price from orderline tabel
+-- Find maxminum salary in employee table
+
+-- First approach
+select MAX(retail_price) from yfs_order_line;
+
+-- second approach
+select * from yfs_order_line where retail_price in(select MAX(retail_price) from yfs_order_line);
+
+-- Thord approch
+select retail_price from  (select retail_price from yfs_order_line  group by retail_price  order by retail_price  desc) where ROWNUM=10 ;
+
+-- this will print max 3 retial price
+select retail_price from
+(select  * from yfs_order_line order by retail_price desc)
+where rownum<=3
+order by retail_price;
+
+Primary Key ::
+    -- it canot be null
+    -- it is identiofied as uniq
+    -- it canot be chnaged on un time or over the period
+    --
