@@ -1,0 +1,51 @@
+SDLC ::
+    Software development life cycle
+
+  -- Every compnay has has there own approach and pattern
+  -- There are predefined processes in market, where they are succesfully estabilshed and proved
+  -- Agile, TTD, Water fall, V model
+  --
+  I need to develope a Web/ mobile/ backend Sas software
+
+  Pre request ::
+    1. Business IDEA - Founders will have
+    2. Feature design
+    3. Wire frame (UX)
+    4. Product manager - will design a document
+    5. Discuss - how to implmenet /challenges/additional features
+    6. COSt estimation- fund has to raised
+    7. Software Tech and non tech setup
+    8. Development, finance, HR, COntent writer, PM, EM, LEads, Testers Texh ops
+    9. Estimate - resource (Hoe many employees do we require to develope)
+    10. time estimation (when to go live)
+    11. PM will gove requirment to Tech Head
+    12. Tech head will distribute to EM's
+    13. Em's will plan  estimiation by discusing with leads and employess with PM's also
+    14. And provide Estimation of delivery
+    15. Devlopersa will take tasks-- and start developing
+    16. Unit testing/dry run
+    17. Parallely - testers will wroite cases
+    18. review with PM, EM and devs
+    19. Once development is done- they will give demo to internal team
+    20. in hase 1, PM will collect info and suggest changes to be done
+    21. Dev will create reposoitory and push in repo
+    22. Create pipeline CI/CD and deploy code
+    23. mean while tester will start testing  in Local env(SIT<UAT<DEV)
+    24. STLC process go head
+    25. BUg life cycle
+    26. UAT testing is done with budiness
+    27. final revoew with Stack holders and business persons
+    28. create Prod setup
+    29. port opening
+    30. ip creations, servers, hardwares
+    31. deploy code in Beta version for few people acess
+    32. once it is stable, make it 100% usage
+    33. post produyction , checking analystics
+    34. server logs
+    35. Error analysing
+    36. Mainatinance
+    37. new changes
+    38. updateion in existing dsoftware
+
+
+
